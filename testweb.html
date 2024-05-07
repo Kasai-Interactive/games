@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasai Interactive</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+        body {
+            font-family: 'VT323', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #00f;
+        }
+
+        header {
+            background-color: #000;
+            color: #00f;
+            padding: 20px;
+            text-align: center;
+            animation: fadeInDown 1s ease;
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #00f;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #0ff;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 36px;
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .game {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: slideIn 1s ease;
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .game img {
+            width: 200px;
+            height: auto;
+            border: 5px solid #00f;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 0px #00f;
+            animation: fadeIn 2s ease;
+        }
+
+        button {
+            background-color: #00f;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0px 0px 20px 0px #00f;
+
+        }
+
+        button:hover {
+            background-color: #0ff;
+            box-shadow: 0px 0px 10px 0px #00f;
+
+        }
+
+        footer {
+            background-color: #000;
+            color: #00f;
+            text-align: center;
+            padding: 20px;
+            animation: fadeInUp 3s ease;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer section {
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0px 0px 20px 0px #00f;
+        }
+
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+            box-shadow: 0px 0px 20px 0px #00f;
+        }
+
+        footer ul li {
+            margin-bottom: 10px;
+            box-shadow: 0px 0px 20px 0px #00f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kasai Interactive</h1>
+        <nav>
+            <ul>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#about">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="games">
+        <h2>Games</h2>
+        <div class="game">
+            <img src="game1.jpg" alt="Game 1">
+            <button>Play Now</button>
+        </div>
+        <div class="game">
+            <img src="game2.jpg" alt="Game 2">
+            <button>Play Now</button>
+        </div>
+        <!-- Add more games here -->
+    </section>
+    
+    <section id="about">
+        <h2>About us</h2>
+        <p>Placeholder text for about us section.</p>
+    </section>
+    
+    <footer>
+        <section>
+            <h2>Discontinued Games</h2>
+            <ul>
+                <li>Game 3</li>
+                <li>Game 4</li>
+                <!-- Add more discontinued games here -->
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
